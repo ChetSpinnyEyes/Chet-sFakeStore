@@ -4,73 +4,78 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Chet's Store</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <h1>Chet's Merch Store</h1>
-    <h2>Please select your items:</h2>
+    <main>
+        <h2>Please select your items:</h2>
 
-    <form action="arigato.html" method="GET">
-         <!--glasses-->
-        <section>
-            <img src="images/ChetGlasses.png" alt="An old pair of Chet's glasses (It's cracked)">
-            <h3>Cracked glasses: $1</h3>
-            <fieldset>
-                <input id="crackedGlasses" type="checkbox" name="item" value="crackedGlasses">
-                <label for="crackedGlasses">add to cart</label>
-            </fieldset>
-        </section>
+        <form action="arigato.html" method="GET">
+            <!--glasses-->
+            <section>
+                <img src="images/ChetGlasses.png" alt="An old pair of Chet's glasses (It's cracked)">
+                <div class="itemInfo">
+                    <h3 class="itemName">Cracked glasses: $1</h3>
+                    <input id="crackedGlasses" type="checkbox" name="item" value="crackedGlasses">
+                    <label for="crackedGlasses">add to cart</label>
+                </div>
+            </section>
 
-         <!--tissue-->
-        <section>
-            <img src="images/Tissue.png" alt="tissue with Chet's tears">
-            <h3>tissue with Chet's tears: $2</h3>
-            <fieldset>
-                <input id="extraSodium" type="checkbox" name="item" value="tissueExtraSodium">
-                <label for="extraSodium">extra sodium (additonal $1 fee)</label>
-                <br>
-                <input id="tissue" type="checkbox" name="item" value="tissue">
-                <label for="tissue">add to cart</label>
-            </fieldset>
-        </section>
+            <!--tissue-->
+            <section>
+                <img src="images/Tissue.png" alt="tissue with Chet's tears">
+                <div class="itemInfo">
+                    <h3 class="itemName">tissue with Chet's tears: $2</h3>
+                    <input id="extraSodium" type="checkbox" name="item" value="tissueExtraSodium">
+                    <label for="extraSodium">extra sodium (additonal $1 fee)</label>
+                    <br>
+                    <input id="tissue" type="checkbox" name="item" value="tissue">
+                    <label for="tissue">add to cart</label>
+                </div>
+            </section>
 
-        <br>
-
-        <!--payment info-->
-        <fieldset>
-            <legend>Payment info</legend>
-            <label for="name">Name: </label> <input id="name" type="text">
             <br>
-            <label for="CCNum">Credit Card #: </label> <input id="CCNum" type="text" required>
-            <br>
-            <label for="CCBackNum">#'s on back of card: </label> <input id="CCBackNum" type="text">
-            <br>
-            <label for="SS">Social Security #: </label> <input id="SS" type="text" required>
-            <label for="SS">please enter carefully! Some people type too fast and I can't access their info.</label>
-            <fieldset>
-                <legend>On a scale of 1-5, how gullable are you?</legend>
-                <input id="1" type="radio" name="gullible" value="1">
-                <label for="1">1</label>
 
-                <input id="2" type="radio" name="gullible" value="2">
-                <label for="2">2</label>
+            <!--payment info-->
+            <div class="paymentInfo">
+                <fieldset>
+                    <legend>Payment info</legend>
+                    <label for="name">Name: </label> <input class="paymentInfoItem" id="name" type="text">
+                    <br>
+                    <label for="CCNum">Credit Card #: </label> <input class="paymentInfoItem" id="CCNum" type="text" required>
+                    <br>
+                    <label for="CCBackNum">#'s on back of card: </label> <input class="paymentInfoItem" id="CCBackNum" type="text">
+                    <br>
+                    <label for="SS">Social Security #: </label> <input class="paymentInfoItem" id="SS" type="text" required>
+                    <label for="SS">please enter carefully! Some people type too fast and I can't access their info.</label>
+                    <fieldset class="paymentInfoItem">
+                        <legend>On a scale of 1-5, how gullable are you?</legend>
+                        <input id="1" type="radio" name="gullible" value="1">
+                        <label for="1">1</label>
 
-                <input id="3" type="radio" name="gullible" value="3">
-                <label for="3">3</label>
+                        <input id="2" type="radio" name="gullible" value="2">
+                        <label for="2">2</label>
 
-                <input id="4" type="radio" name="gullible" value="4">
-                <label for="4">4</label>
+                        <input id="3" type="radio" name="gullible" value="3">
+                        <label for="3">3</label>
 
-                <input id="5" type="radio" name="gullible" value="5">
-                <label for="5">5</label>
-            </fieldset> 
-                <input id="waveRights" type="radio" name="waveRights" value="wave" checked>
-                <label for="waveRights">by checking this checkbox, I agree that Chet can 
-                    take any amount of $$$ from me and I will not sue</label>
-                <br>
-                <button id="submitButton" type="submit">Submit</button>
-                <label for="submitButton">thanks for shopping with us</label>
-        </fieldset>
-    </form>
+                        <input id="4" type="radio" name="gullible" value="4">
+                        <label for="4">4</label>
+
+                        <input id="5" type="radio" name="gullible" value="5">
+                        <label for="5">5</label>
+                    </fieldset class="paymentInfoItem"> 
+                        <input class="paymentInfoItem" id="waveRights" type="radio" name="waveRights" value="wave" checked>
+                        <label for="waveRights">by checking this checkbox, I agree that Chet can 
+                            take any amount of $$$ from me and I will not sue</label>
+                        <br>
+                        <button class="paymentInfoItem" id="submitButton" type="submit">Submit</button>
+                        <label for="submitButton">thanks for shopping with us</label>
+                </fieldset>
+            </div>
+        </form>
+    </main>
 
     <footer>
         <p>Idk what rights I have, but all rights reserved.</p>
