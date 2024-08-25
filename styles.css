@@ -1,0 +1,51 @@
+main {
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.paymentInfo {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 25px;
+}
+
+.itemInfo {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 25px;
+}
+
+img {
+    border: 2px solid black;
+}
+
+.itemName {
+    margin-top: 0px;
+    margin-bottom: 5px;
+}
+
+footer p {
+    text-align: center;
+}
+
+/* payment boxes */
+#name {
+    margin-left: 100px;
+}
+#CCNum {
+    margin-left: 52px;
+}
+#CCBackNum {
+    margin-left: 18px;
+}
+#SS {
+    margin-left: 29px;
+}
+
+.paymentInfoItem {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
